@@ -16,7 +16,7 @@ if(empty($id) || !is_numeric($id) || empty($en_name) || empty($en_surname) || em
     echo "กรุณากรอก id เป็นตัวเลข</br>";
   }
   if( empty($en_name)){
-      echo "กรุณากรอกชื่อภาษาอังกฤษ/br>";
+      echo "กรุณากรอกชื่อภาษาอังกฤษ</br>";
   }
   if( empty($en_surname)){
       echo "กรุณากรอกนามสกุลภาษาอังกฤษ</br>";
