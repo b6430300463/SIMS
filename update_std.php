@@ -1,12 +1,12 @@
 <?php
-$id = trim($_POST["id"]);
-$old_id=trim($_POST["old_id"]);
-$en_name = trim($_POST["en_name"]);
-$en_surname = trim($_POST["en_surname"]);
-$th_name = trim($_POST["th_name"]);
-$th_surname = trim($_POST["th_surname"]);
-$major_code = trim($_POST["major_code"]);
-$email = trim($_POST["email"]);
+$id = htmlspecialchars(trim($_POST["id"]));
+$old_id=htmlspecialchars(trim($_POST["old_id"]));
+$en_name = htmlspecialchars(trim($_POST["en_name"]));
+$en_surname = htmlspecialchars(trim($_POST["en_surname"]));
+$th_name = htmlspecialchars(trim($_POST["th_name"]));
+$th_surname = htmlspecialchars(trim($_POST["th_surname"]));
+$major_code = htmlspecialchars(trim($_POST["major_code"]));
+$email = htmlspecialchars(trim($_POST["email"]));
 
 if(empty($id) || !is_numeric($id) || empty($en_name) || empty($en_surname) || empty($th_name) || empty($th_surname) || empty($major_code) || empty($email)){
   if (empty($id)) {
